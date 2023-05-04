@@ -1,9 +1,12 @@
+import ConetextProvider from "./components/context";
 import Routers from "./components/routes";
-import Login from "./pages/login";
-import Main from "./pages/main";
 
 function App() {
-  return <Routers/>
+  return (
+    <ConetextProvider>
+      <Routers />
+    </ConetextProvider>
+  );
 }
 
 export default App;

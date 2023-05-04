@@ -6,7 +6,9 @@ export default function PaginaInicial() {
   return (
     <div>
       <h2>Pagina inicial</h2>
-      <button onClick={() => navigate("/atividades")}>
+      <button
+        onClick={() => navigate("/atividades", { state: {title: "hello turma"} })}
+      >
         Ir para pagina Atividades
       </button>
     </div>
